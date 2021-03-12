@@ -1,9 +1,54 @@
-img#nav-logo{
-    max-width: 150px;
+*{
+    font-family: 'Exo', sans-serif;
 }
-h1{
-    color: red;
-}
+
 body{
+    background-color: #fee9d7;
     height: 150vh;
+}
+
+.navbar-nav{
+    min-width: 25vw;
+    justify-content: space-between;
+}
+
+.navbar{
+    background: rgb(249,191,143);
+    background: linear-gradient(180deg, rgba(249,191,143,1) 35%, rgba(254,233,215,1) 100%);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: #34222e;
+    padding-right: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: #e2434b;
+}
+
+.nav-link {
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #84577c;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url(arrow-icon.svg)!important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(52, 34, 46, 1)
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 .15rem;
 }
